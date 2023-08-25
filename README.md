@@ -30,12 +30,8 @@ Hello there! I'm Abreham Wondimu, a passionate Full Stack Software Engineer with
  <img src="https://play-lh.googleusercontent.com/2ZcwyAqw8UICtizzYGajJQBYWN60B3Q1I3m9YKHKwVZ2a8LY9A4LxmzT7fS_ZCNqjP4G=w526-h296-rw"/>
 </span>
 - [Zema Multimedia](https://play.google.com/store/apps/details?id=com.zema.music.player&hl=en&gl=US): Music Streamer app, that has mainly three broad features such as Music, Podcast and Radio Streaming.
-  <span>
 
-<img src="https://play-lh.googleusercontent.com/6d-o3964M9PQXLXD05Pg3nrm-wRmK2bSryO0xYTstMJnpSMRlI5NRNpqh2EL1j0yvw=w526-h296-rw"/>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
-<img src="https://play-lh.googleusercontent.com/IYYdcSlzs8mCe9aECevhbqSPmK9IaSuSyxwp-2QKnYuitKcR-Y60hxOLyS0G1VVWYC53=w526-h296-rw"/>
-
+  ## <span><img src="https://play-lh.googleusercontent.com/6d-o3964M9PQXLXD05Pg3nrm-wRmK2bSryO0xYTstMJnpSMRlI5NRNpqh2EL1j0yvw=w526-h296-rw"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://play-lh.googleusercontent.com/IYYdcSlzs8mCe9aECevhbqSPmK9IaSuSyxwp-2QKnYuitKcR-Y60hxOLyS0G1VVWYC53=w526-h296-rw"/>
   </span>
 
 
