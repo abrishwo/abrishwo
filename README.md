@@ -1,56 +1,132 @@
-# Hi!
+# 👋 Hi, I'm Abreham Wondimu!
+
+**A passionate Full Stack Software Engineer specializing in creating innovative and efficient solutions with a focus on Mobile (Flutter), Node.js, and React.js.**
 
 ## 🚀 About Me
 
-Hello there! I'm Abreham Wondimu, a passionate Full Stack Software Engineer with expertise in Mobile (Flutter) development, Node.js, Express.js, MongoDB, AWS, and React.js. With a strong foundation in programming and a knack for problem-solving, I strive to create innovative and efficient solutions that make a positive impact.
+Hello there! I'm Abreham Wondimu Shiferaw, a passionate and solution-driven Full Stack Software Engineer. I love crafting clean code and building impactful digital solutions that help businesses and individuals turn ideas into scalable products.
 
-## 💻 What I Do
+I graduated with a B.Tech in Computer Science & Engineering from KIIT University, India, where I was honored to receive a full merit scholarship.
 
-- **Software Engineering:** I specialize in building robust and scalable software applications. My experience spans across a variety of tech stacks, allowing me to adapt and excel in different environments.
+Currently, I work as a Software Engineer at Adadiko ICT. I'm also proud to be the founder of:
+-   **EnatGPT:** A multilingual AI chatbot mobile app.
+-   **Edemy:** An LMS app providing access to university notes and online learning for Ethiopian students.
+-   **AIPostify:** An AI-powered social media management tool with multiple advanced features.
 
-- **Flutter Development:** As a Flutter enthusiast, I create cross-platform mobile applications with stunning UI and smooth user experiences. I believe in creating apps that not only work flawlessly but also look great.
+## 🛠️ Skills
 
-## 🛠️ Tech Stack
+**Languages:**
+- Python
+- JavaScript
+- Dart
+- Java
+- C/C++
+- PHP
 
-- **Languages:** Python, JavaScript, Dart, Java, C/C++, PHP
-- **Frontend:** React.js, Flutter, Angular, React-Native
-- **Backend:** Node.js, Express.js, Django, Laravel
-- **Databases:** MongoDB, MySQL
-- **Cloud:** Amazon Web Services (AWS), Google Cloud Platform(GCP)
-- **Version Control:** Git
+**Frontend:**
+- React.js
+- Flutter
+- Angular
+- React-Native
+
+**Backend:**
+- Node.js
+- Express.js
+- Django
+- Laravel
+
+**Databases:**
+- MongoDB
+- MySQL
+
+**Cloud:**
+- Amazon Web Services (AWS)
+- Google Cloud Platform (GCP)
+
+**Version Control:**
+- Git
+
+## 💼 Experience
+
+### Beton Properties
+*Developer - freelance (2024-2025)*
+- Created a real estate listing platform with dynamic search, filtering, and property management features.
+- Built admin dashboards for agents and integrated booking/contact flows.
+- Ensured mobile-friendly design and SEO optimization.
+- Helped scale the platform to support multiple property categories and agents.
+
+### Adadiko ICT
+*Software Engineer (2022-2024)*
+- Developed custom web and mobile solutions for government and private institutions.
+- Led the development of enterprise dashboards, admin panels, and data visualization tools.
+- Built secure REST APIs with Node.js and integrated payment gateways.
+- Maintained internal tools and built reusable CMS systems using React, Flutter, and Firebase.
+- Collaborated on team-based projects, contributing to architecture and UI/UX design.
+
+### DineIn Delivery
+*Full Stack Developer - freelance (2023-2024)*
+- Developed a full-stack food delivery system with order tracking, admin panel, and driver interface.
+- Built responsive frontend using React and managed backend with Node.js and MongoDB.
+- Implemented geolocation, order assignment, and live order status updates.
+- Worked directly with founders to rapidly iterate and deploy MVP.
 
 ## 🌟 My Projects
 
-- [Bet Ethiopia](https://play.google.com/store/apps/details?id=com.realstate.betethiopia&hl=en&gl=US): Real state, market place focusing on local market of Ethiopia.
+### [Bet Ethiopia](https://play.google.com/store/apps/details?id=com.realstate.betethiopia&hl=en&gl=US)
+-   **Description:** Real estate marketplace focusing on the local market of Ethiopia. Features multiple payment methods.
+-   **Technologies:** Flutter, Node.js (assumed based on general skills)
 
- With multiple features and payment methods. Worked as a full stack developer handling from frontend to backend.
+### [Zema Multimedia](https://play.google.com/store/apps/details?id=com.zema.music.player&hl=en&gl=US)
+-   **Description:** Music streamer app with Music, Podcast, and Radio Streaming features.
+-   **Technologies:** Flutter (assumed), Node.js (assumed)
 
- <span> <img src="https://play-lh.googleusercontent.com/92K52Qi6Z3W6fckw6V7CIfYuLAxELmrob9ZFKb2DvECJgsHwNF3ID43D9g3hu2kfmuM=w526-h296-rw"/> 
- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> &nbsp;
- <img src="https://play-lh.googleusercontent.com/2ZcwyAqw8UICtizzYGajJQBYWN60B3Q1I3m9YKHKwVZ2a8LY9A4LxmzT7fS_ZCNqjP4G=w526-h296-rw"/>
-</span>
-- [Zema Multimedia](https://play.google.com/store/apps/details?id=com.zema.music.player&hl=en&gl=US): Music Streamer app, that has mainly three broad features such as Music, Podcast and Radio Streaming.
+### [EnatGPT](https://enatgpt.enatsoft.com/)
+-   **Description:** A multilingual AI chatbot mobile app.
+-   **Technologies:** Flutter (assumed), AI/ML
 
-   <span><img src="https://play-lh.googleusercontent.com/6d-o3964M9PQXLXD05Pg3nrm-wRmK2bSryO0xYTstMJnpSMRlI5NRNpqh2EL1j0yvw=w526-h296-rw"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://play-lh.googleusercontent.com/IYYdcSlzs8mCe9aECevhbqSPmK9IaSuSyxwp-2QKnYuitKcR-Y60hxOLyS0G1VVWYC53=w526-h296-rw"/></span>
+### Edemy
+-   **Description:** An LMS app providing access to university notes and online learning for Ethiopian students.
+-   **Technologies:** Flutter (assumed), Node.js (assumed)
 
+### [AIPostify](https://aipostify.enatsoft.com/)
+-   **Description:** An AI-powered social media management tool with multiple advanced features.
+-   **Technologies:** React (assumed), Node.js (assumed), AI/ML
 
-## 📚 Blog & Tutorials
+### [Woye Now Ride Hailing](https://woyenow.com/)
+-   **Description:** Ride hailing application.
+-   **Technologies:** Flutter (assumed), Node.js (assumed)
 
-I enjoy sharing my knowledge and insights with the community. Check out some of my latest blog posts and tutorials:
-<!--
-- [Title of Blog Post 1](link-to-blog-post-1): A short description of the topic and what readers can learn from it.
+### [Beton Real Estate Marketplace](https://beton.et/)
+-   **Description:** Real estate listing platform with dynamic search, filtering, and property management features.
+-   **Technologies:** React (assumed), Node.js (assumed)
 
-- [Title of Blog Post 2](link-to-blog-post-2): Highlight the value readers will gain from your expertise.
--->
+### [DineIn Delivery System](https://dineindlvr.com/)
+-   **Description:** Full-stack food delivery system with order tracking, admin panel, and driver interface.
+-   **Technologies:** React, Node.js, MongoDB
+
+## 📊 My GitHub Stats
+
+[![Abreham's GitHub stats](https://github-readme-stats.vercel.app/api?username=abrishwo&show_icons=true&theme=radical)](https://github.com/abrishwo)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=abrishwo&layout=compact&theme=radical)](https://github.com/abrishwo)
 
 ## 📫 Let's Connect
 
-I'm always open to connecting with fellow developers, tech enthusiasts, and potential collaborators. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/abrishwon21) or [Twitter](https://twitter.com/abrishwon9).
+I'm always open to connecting with fellow developers, tech enthusiasts, and potential collaborators. Feel free to reach out!
 
-Looking forward to making great things happen together! 🌟
+-   **LinkedIn:** [linkedin.com/in/abrishwon](https://www.linkedin.com/in/abrishwon)
+-   **Twitter:** [@abrishwon9](https://twitter.com/abrishwon9)
+-   **Personal Website:** [abreham.enatsoft.com](https://abreham.enatsoft.com)
+-   **Email:** [abrishwon9@gmail.com](mailto:abrishwon9@gmail.com)
 
-[![GitHub followers](https://img.shields.io/github/followers/abrishwo?label=Follow&style=social)](https://github.com/abrishwo)
+## 📚 Blog & Tutorials
+
+I enjoy sharing my knowledge and insights with the community. Check out some of my articles:
+
+-   [Unlocking the Power of Ge’ez Numerals: A Seamless Conversion with Geez Numerals Converter](https://enatsoft.com/blog/unlocking-the-power-of-ge-ez-numerals-a-seamless-conversion-with-geez-numerals-converter)
+    *   A brief on handling Ge'ez numeral systems in programming.
+-   [Unleash the Search Engine Power Within: Demystifying SEO](https://enatsoft.com/blog/unleash-the-search-engine-power-within-demystifying-seo)
+    *   An overview of SEO and its importance for online visibility.
+-   [Exciting Times Ahead in Mobile App Development!](https://enatsoft.com/blog/exciting-times-ahead-in-mobile-app-development)
+    *   Insights into emerging trends in mobile app development.
 
 ---
-
-<!-- *Disclaimer: Replace placeholders (like `[Your Name]`, `link-to-project-1`, etc.) with your actual information.* -->
