@@ -1,0 +1,50 @@
+{
+  "name": "Project",
+  "pluralName": "Projects",
+  "displayName": "Project",
+  "kind": "collectionType",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Web",
+        "Mobile",
+        "AI",
+        "Data Science"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "projects"
+    },
+    "liveUrl": {
+      "type": "string"
+    },
+    "githubUrl": {
+      "type": "string"
+    }
+  }
+}

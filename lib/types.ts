@@ -53,3 +53,11 @@ export interface SocialLink {
     url: string;
     icon: IconType;
 }
+
+export interface Testimonial {
+    id: number;
+    name: string;
+    quote: string;
+    company?: string;
+    avatar?: string;
+}

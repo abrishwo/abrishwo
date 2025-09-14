@@ -1,15 +1,48 @@
 "use client";
 
+import { useState } from "react";
 import { socialLinks } from "@/lib/data";
 import { Button } from "@/components/ui/Button";
 
 export const Contact = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    honeypot: "", // This is a hidden field for spam protection
+  });
+  const [status, setStatus] = useState({
+    loading: false,
+    success: false,
+    error: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Here you would typically handle form submission,
-    // e.g., send data to an API endpoint.
-    alert("Thank you for your message! I will get back to you soon.");
-    (e.target as HTMLFormElement).reset();
+    setStatus({ loading: true, success: false, error: "" });
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.message || "Something went wrong.");
+      }
+
+      setStatus({ loading: false, success: true, error: "" });
+      setFormData({ name: "", email: "", message: "", honeypot: "" }); // Reset form
+    } catch (error: any) {
+      setStatus({ loading: false, success: false, error: error.message });
+    }
   };
 
   return (
@@ -38,21 +71,34 @@ export const Contact = () => {
             </div>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="text"
+              name="honeypot"
+              className="hidden"
+              value={formData.honeypot}
+              onChange={handleChange}
+            />
             <div>
               <label htmlFor="name" className="sr-only">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required className="w-full px-4 py-2 rounded-md bg-light dark:bg-dark border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary"/>
+              <input type="text" id="name" name="name" placeholder="Your Name" required value={formData.name} onChange={handleChange} className="w-full px-4 py-2 rounded-md bg-light dark:bg-dark border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary"/>
             </div>
             <div>
               <label htmlFor="email" className="sr-only">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required className="w-full px-4 py-2 rounded-md bg-light dark:bg-dark border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary"/>
+              <input type="email" id="email" name="email" placeholder="Your Email" required value={formData.email} onChange={handleChange} className="w-full px-4 py-2 rounded-md bg-light dark:bg-dark border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary"/>
             </div>
             <div>
               <label htmlFor="message" className="sr-only">Message</label>
-              <textarea id="message" name="message" rows={5} placeholder="Your Message" required className="w-full px-4 py-2 rounded-md bg-light dark:bg-dark border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary"></textarea>
+              <textarea id="message" name="message" rows={5} placeholder="Your Message" required value={formData.message} onChange={handleChange} className="w-full px-4 py-2 rounded-md bg-light dark:bg-dark border border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary"></textarea>
             </div>
-            <Button type="submit" variant="primary" className="w-full">
-              Send Message
+            <Button type="submit" variant="primary" className="w-full" disabled={status.loading}>
+              {status.loading ? "Sending..." : "Send Message"}
             </Button>
+            {status.success && (
+              <p className="text-green-600 text-center">Thank you for your message! I will get back to you soon.</p>
+            )}
+            {status.error && (
+              <p className="text-red-600 text-center">{status.error}</p>
+            )}
           </form>
         </div>
       </div>

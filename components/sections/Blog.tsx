@@ -1,9 +1,12 @@
-import { blogPosts } from "@/lib/data";
+import { getBlogPosts } from "@/lib/cms";
 import { BlogPostCard } from "@/components/ui/BlogPostCard";
+import Link from "next/link";
+import { Button } from "../ui/Button";
 
-export const Blog = () => {
+export const Blog = async () => {
+  const allPosts = await getBlogPosts();
   // Displaying only the first 2 posts for the preview section
-  const postsToShow = blogPosts.slice(0, 2);
+  const postsToShow = allPosts.slice(0, 2);
 
   return (
     <section id="blog" className="py-20 bg-gray-50 dark:bg-gray-900/50">
@@ -15,10 +18,11 @@ export const Blog = () => {
           ))}
         </div>
         <div className="text-center mt-12">
-            {/* This will eventually link to a dedicated blog page */}
-            <a href="/blog" className="text-primary dark:text-primaryDark font-semibold hover:underline">
+          <Link href="/blog">
+            <Button variant="outline">
                 View All Posts
-            </a>
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

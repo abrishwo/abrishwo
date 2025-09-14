@@ -1,0 +1,46 @@
+name: CI
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  ci:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18' # Using a specific LTS version
+
+    - name: Install dependencies with Yarn
+      run: |
+        npm install -g yarn
+        yarn install --frozen-lockfile
+
+    - name: Lint code
+      run: yarn lint
+
+    - name: Build project
+      run: yarn build
+
+    - name: Run unit tests
+      run: yarn test
+
+    - name: Install Playwright Browsers
+      run: yarn playwright install --with-deps
+
+    - name: Run E2E tests
+      run: yarn playwright test
+
+    - name: Upload Playwright report
+      uses: actions/upload-artifact@v4
+      if: always() # Upload report even if tests fail
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30
