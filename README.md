@@ -7,7 +7,7 @@
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-red?style=flat&logo=gmail)](mailto:abrishwon9@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-View%20Profile-black?style=flat&logo=github)](https://github.com/abrishwo)
 
-## 🎯 Professional Summary
+## 🎯 Profession Summary
 
 **Results-driven Senior Software Engineer** with 5+ years of experience in full-stack development, specializing in **Mobile Applications (Flutter, React Native)**, **AI-powered solutions**, and **Enterprise Web Applications**. Proven track record of building scalable, high-performance applications that serve thousands of users across multiple continents.
 
