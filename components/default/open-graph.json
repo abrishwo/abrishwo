@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_default_open_graphs",
+  "info": {
+    "displayName": "Open Graph",
+    "icon": "share-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

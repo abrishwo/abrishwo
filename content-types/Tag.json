@@ -1,0 +1,24 @@
+{
+  "name": "Tag",
+  "pluralName": "Tags",
+  "displayName": "Tag",
+  "kind": "collectionType",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "tags"
+    }
+  }
+}

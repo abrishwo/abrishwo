@@ -1,0 +1,37 @@
+{
+  "name": "FAQ",
+  "pluralName": "FAQs",
+  "displayName": "FAQ",
+  "kind": "collectionType",
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "richtext",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "General",
+        "Services",
+        "Pricing",
+        "Technical",
+        "Support"
+      ],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Case Study",
+  "pluralName": "Case Studies",
+  "displayName": "Case Study",
+  "kind": "collectionType",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "client": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service",
+      "inversedBy": "caseStudies"
+    },
+    "challenge": {
+      "type": "richtext",
+      "required": true
+    },
+    "solution": {
+      "type": "richtext",
+      "required": true
+    },
+    "results": {
+      "type": "richtext",
+      "required": true
+    },
+    "technologies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "default.technology"
+    },
+    "timeline": {
+      "type": "string"
+    },
+    "team": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team-member.team-member"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "testimonial": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::testimonial.testimonial"
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "default.keyword"
+    }
+  }
+}

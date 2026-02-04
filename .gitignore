@@ -1,0 +1,26 @@
+.strapi
+node_modules
+build
+.env
+.DS_Store
+.cache
+dist
+.vscode
+.idea
+.tmp
+uploads
+public/uploads
+sqlite
+.sqlite3
+.db
+temp
+tmp
+*.log
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# CMS specific
+package-lock.json
+yarn.lock
+# .strapi-updater.json 

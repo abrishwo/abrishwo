@@ -1,0 +1,68 @@
+{
+  "name": "Site Settings",
+  "pluralName": "Site Settings",
+  "displayName": "Site Settings",
+  "kind": "singleType",
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true
+    },
+    "siteDescription": {
+      "type": "text",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "primaryColor": {
+      "type": "string",
+      "default": "#007bff"
+    },
+    "secondaryColor": {
+      "type": "string",
+      "default": "#6c757d"
+    },
+    "contactEmail": {
+      "type": "email",
+      "required": true
+    },
+    "contactPhone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "default.social-link"
+    },
+    "analytics": {
+      "type": "component",
+      "repeatable": false,
+      "component": "default.analytics"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "default.seo-settings"
+    },
+    "legal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "default.legal-settings"
+    }
+  }
+}

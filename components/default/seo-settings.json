@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_default_seo_settings",
+  "info": {
+    "displayName": "SEO Settings",
+    "icon": "search"
+  },
+  "options": {},
+  "attributes": {
+    "defaultTitle": {
+      "type": "string",
+      "required": true
+    },
+    "defaultDescription": {
+      "type": "text",
+      "required": true
+    },
+    "defaultKeywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "default.keyword"
+    },
+    "twitterHandle": {
+      "type": "string"
+    },
+    "openGraph": {
+      "type": "component",
+      "repeatable": false,
+      "component": "default.open-graph"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_default_skills",
+  "info": {
+    "displayName": "Skill",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ],
+      "required": true
+    }
+  }
+}

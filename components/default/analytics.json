@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_default_analytics",
+  "info": {
+    "displayName": "Analytics",
+    "icon": "chart-line"
+  },
+  "options": {},
+  "attributes": {
+    "googleAnalytics": {
+      "type": "string"
+    },
+    "facebookPixel": {
+      "type": "string"
+    },
+    "other": {
+      "type": "json"
+    }
+  }
+}

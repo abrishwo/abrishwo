@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_default_keywords",
+  "info": {
+    "displayName": "Keyword",
+    "icon": "tag"
+  },
+  "options": {},
+  "attributes": {
+    "keyword": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

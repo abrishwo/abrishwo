@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_default_features",
+  "info": {
+    "displayName": "Feature",
+    "icon": "check-circle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

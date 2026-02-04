@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_default_legal_settings",
+  "info": {
+    "displayName": "Legal Settings",
+    "icon": "file-alt"
+  },
+  "options": {},
+  "attributes": {
+    "privacyPolicy": {
+      "type": "text"
+    },
+    "termsOfService": {
+      "type": "text"
+    },
+    "cookiePolicy": {
+      "type": "text"
+    }
+  }
+}

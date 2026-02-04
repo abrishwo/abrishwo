@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_default_certifications",
+  "info": {
+    "displayName": "Certification",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "issuer": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
